@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\IET\\Desktop\\Parth\\Dot Net\\BasicATMProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F37533C-C915-4A8E-BC31-F6CD64F1B0B0}|BasicATMProject\\BasicATMProject.csproj|c:\\users\\iet\\desktop\\parth\\dot net\\basicatmproject\\basicatmproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F37533C-C915-4A8E-BC31-F6CD64F1B0B0}|BasicATMProject\\BasicATMProject.csproj|solutionrelative:basicatmproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F37533C-C915-4A8E-BC31-F6CD64F1B0B0}|BasicATMProject\\BasicATMProject.csproj|c:\\users\\iet\\desktop\\parth\\dot net\\basicatmproject\\basicatmproject\\atmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F37533C-C915-4A8E-BC31-F6CD64F1B0B0}|BasicATMProject\\BasicATMProject.csproj|solutionrelative:basicatmproject\\atmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F37533C-C915-4A8E-BC31-F6CD64F1B0B0}|BasicATMProject\\BasicATMProject.csproj|c:\\users\\iet\\desktop\\parth\\dot net\\basicatmproject\\basicatmproject\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F37533C-C915-4A8E-BC31-F6CD64F1B0B0}|BasicATMProject\\BasicATMProject.csproj|solutionrelative:basicatmproject\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F37533C-C915-4A8E-BC31-F6CD64F1B0B0}|BasicATMProject\\BasicATMProject.csproj|c:\\users\\iet\\desktop\\parth\\dot net\\basicatmproject\\basicatmproject\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F37533C-C915-4A8E-BC31-F6CD64F1B0B0}|BasicATMProject\\BasicATMProject.csproj|solutionrelative:basicatmproject\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\Parth\\Dot Net\\BasicATMProject\\BasicATMProject\\Account.cs",
+              "RelativeDocumentMoniker": "BasicATMProject\\Account.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\Parth\\Dot Net\\BasicATMProject\\BasicATMProject\\Account.cs",
+              "RelativeToolTip": "BasicATMProject\\Account.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:42:16.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ATMController.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\Parth\\Dot Net\\BasicATMProject\\BasicATMProject\\ATMController.cs",
+              "RelativeDocumentMoniker": "BasicATMProject\\ATMController.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\Parth\\Dot Net\\BasicATMProject\\BasicATMProject\\ATMController.cs",
+              "RelativeToolTip": "BasicATMProject\\ATMController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwBQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:41:55.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\Parth\\Dot Net\\BasicATMProject\\BasicATMProject\\Login.cs",
+              "RelativeDocumentMoniker": "BasicATMProject\\Login.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\Parth\\Dot Net\\BasicATMProject\\BasicATMProject\\Login.cs",
+              "RelativeToolTip": "BasicATMProject\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:12:21.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\Parth\\Dot Net\\BasicATMProject\\BasicATMProject\\Program.cs",
+              "RelativeDocumentMoniker": "BasicATMProject\\Program.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\Parth\\Dot Net\\BasicATMProject\\BasicATMProject\\Program.cs",
+              "RelativeToolTip": "BasicATMProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:09:57.369Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

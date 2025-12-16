@@ -1,0 +1,29 @@
+C:\Users\IET\Desktop\Parth\Dot Net\BasicATMProject\BasicATMProject\bin\Debug\net8.0\BasicATMProject.exe
+C:\Users\IET\Desktop\Parth\Dot Net\BasicATMProject\BasicATMProject\bin\Debug\net8.0\BasicATMProject.deps.json
+C:\Users\IET\Desktop\Parth\Dot Net\BasicATMProject\BasicATMProject\bin\Debug\net8.0\BasicATMProject.runtimeconfig.json
+C:\Users\IET\Desktop\Parth\Dot Net\BasicATMProject\BasicATMProject\bin\Debug\net8.0\BasicATMProject.dll
+C:\Users\IET\Desktop\Parth\Dot Net\BasicATMProject\BasicATMProject\bin\Debug\net8.0\BasicATMProject.pdb
+C:\Users\IET\Desktop\Parth\Dot Net\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\Parth\Dot Net\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\Parth\Dot Net\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.AssemblyInfo.cs
+C:\Users\IET\Desktop\Parth\Dot Net\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\Parth\Dot Net\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.dll
+C:\Users\IET\Desktop\Parth\Dot Net\BasicATMProject\BasicATMProject\obj\Debug\net8.0\refint\BasicATMProject.dll
+C:\Users\IET\Desktop\Parth\Dot Net\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.pdb
+C:\Users\IET\Desktop\Parth\Dot Net\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.genruntimeconfig.cache
+C:\Users\IET\Desktop\Parth\Dot Net\BasicATMProject\BasicATMProject\obj\Debug\net8.0\ref\BasicATMProject.dll
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\bin\Debug\net8.0\BasicATMProject.exe
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\bin\Debug\net8.0\BasicATMProject.deps.json
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\bin\Debug\net8.0\BasicATMProject.runtimeconfig.json
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\bin\Debug\net8.0\BasicATMProject.dll
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\bin\Debug\net8.0\BasicATMProject.pdb
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.AssemblyInfoInputs.cache
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.AssemblyInfo.cs
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.sourcelink.json
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.dll
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\obj\Debug\net8.0\refint\BasicATMProject.dll
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.pdb
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\obj\Debug\net8.0\BasicATMProject.genruntimeconfig.cache
+C:\Users\DELL\OneDrive\Desktop\CDAC\DotNet\BasicATMProject\BasicATMProject\obj\Debug\net8.0\ref\BasicATMProject.dll
