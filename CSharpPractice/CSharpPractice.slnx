@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Employee/Employee.csproj" />
+  <Project Path="Student/Student.csproj" />
+</Solution>

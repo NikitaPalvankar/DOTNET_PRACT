@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DiamondPattern")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68b15c47ca2100547258e287b89b6cf82ec9f796")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f945c82a66c9a5b9190b5b7142c77b8ffed4cac4")]
 [assembly: System.Reflection.AssemblyProductAttribute("DiamondPattern")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DiamondPattern")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

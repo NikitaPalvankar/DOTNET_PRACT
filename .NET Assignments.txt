@@ -1,0 +1,510 @@
+-------------.NET Assignmet---------------
+
+1. Login
+2. Create User 
+3. Forgot Password 
+
+
+Constraints : -  
+1.LINQ
+2.Database Connectivity 
+3.Table 
+
+
+create a console app that accepts username , password 
+after validating credentials 
+show message login successfull
+
+if not 
+show invalid username or password / invalid credentials 
+
+DeadLine : Monday 29 dec 2025 
+
+   Got it 👍
+I’ll **support you properly now** and give you a **clean, correct, submission-ready solution** for your **.NET assignment**, without extra confusion.
+
+Below is a **Console Application in C#** that satisfies **ALL constraints**:
+
+✅ Console App
+✅ Username & Password input
+✅ Database connectivity
+✅ Table usage
+✅ LINQ
+✅ Login, Create User, Forgot Password
+✅ CCEE / PG-DAC level
+✅ Easy to explain in viva
+
+---
+
+# 🔷 TECHNOLOGY STACK
+
+* **Language:** C#
+* **Framework:** .NET (Console App)
+* **Database:** SQL Server
+* **ORM:** LINQ to SQL / LINQ with ADO.NET
+
+---
+
+# 🔷 DATABASE DESIGN
+
+### SQL TABLE
+
+```sql
+CREATE TABLE Users
+(
+    UserId INT IDENTITY PRIMARY KEY,
+    Username VARCHAR(50) UNIQUE NOT NULL,
+    Password VARCHAR(50) NOT NULL
+);
+```
+
+---
+
+# 🔷 CONSOLE APPLICATION FLOW
+
+1. Login
+2. Create User
+3. Forgot Password
+
+---
+
+# 🔷 C# CONSOLE APPLICATION CODE
+
+### 📁 Program.cs
+
+```csharp
+using System;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace DotNetAssignment
+{
+    class Program
+    {
+        static string connectionString =
+            "Data Source=.;Initial Catalog=TestDB;Integrated Security=True";
+
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                Console.WriteLine("\n---- MENU ----");
+                Console.WriteLine("1. Login");
+                Console.WriteLine("2. Create User");
+                Console.WriteLine("3. Forgot Password");
+                Console.WriteLine("4. Exit");
+                Console.Write("Choose option: ");
+
+                int choice = int.Parse(Console.ReadLine());
+
+                switch (choice)
+                {
+                    case 1:
+                        Login();
+                        break;
+                    case 2:
+                        CreateUser();
+                        break;
+                    case 3:
+                        ForgotPassword();
+                        break;
+                    case 4:
+                        return;
+                    default:
+                        Console.WriteLine("Invalid choice");
+                        break;
+                }
+            }
+        }
+
+        // 🔹 LOGIN
+        static void Login()
+        {
+            Console.Write("Enter Username: ");
+            string username = Console.ReadLine();
+
+            Console.Write("Enter Password: ");
+            string password = Console.ReadLine();
+
+            List<User> users = GetUsers();
+
+            var validUser = users
+                .Where(u => u.Username == username && u.Password == password)
+                .FirstOrDefault();
+
+            if (validUser != null)
+                Console.WriteLine("✅ Login Successful");
+            else
+                Console.WriteLine("❌ Invalid username or password");
+        }
+
+        // 🔹 CREATE USER
+        static void CreateUser()
+        {
+            Console.Write("Enter New Username: ");
+            string username = Console.ReadLine();
+
+            Console.Write("Enter Password: ");
+            string password = Console.ReadLine();
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                string query = "INSERT INTO Users VALUES (@u,@p)";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@u", username);
+                cmd.Parameters.AddWithValue("@p", password);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+                Console.WriteLine("✅ User Created Successfully");
+            }
+        }
+
+        // 🔹 FORGOT PASSWORD
+        static void ForgotPassword()
+        {
+            Console.Write("Enter Username: ");
+            string username = Console.ReadLine();
+
+            List<User> users = GetUsers();
+
+            var user = users.Where(u => u.Username == username).FirstOrDefault();
+
+            if (user != null)
+                Console.WriteLine($"🔑 Your Password is: {user.Password}");
+            else
+                Console.WriteLine("❌ User not found");
+        }
+
+        // 🔹 FETCH USERS (LINQ + DB)
+        static List<User> GetUsers()
+        {
+            List<User> users = new List<User>();
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Users", con);
+                con.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    users.Add(new User
+                    {
+                        Username = dr["Username"].ToString(),
+                        Password = dr["Password"].ToString()
+                    });
+                }
+            }
+            return users;
+        }
+    }
+
+    // 🔹 USER CLASS
+    class User
+    {
+        public string Username { get; set; }
+        public string Password { get; set; }
+    }
+}
+```
+
+---
+
+# 🔷 HOW THIS SATISFIES CONSTRAINTS
+
+| Requirement     | How                            |
+| --------------- | ------------------------------ |
+| LINQ            | `Where()`, `FirstOrDefault()`  |
+| DB Connectivity | `SqlConnection`, `SqlCommand`  |
+| Table           | `Users` table                  |
+| Login           | Username + Password validation |
+| Create User     | Insert into DB                 |
+| Forgot Password | Fetch via LINQ                 |
+
+---
+
+# 🔷 VIVA / INTERVIEW EXPLANATION (IMPORTANT)
+
+If asked **“Where is LINQ used?”**
+👉 *LINQ is used to filter user records from database using Where() and FirstOrDefault().*
+
+If asked **“How is DB connected?”**
+👉 *Using ADO.NET with SqlConnection.*
+
+If asked **“Why Console App?”**
+👉 *Simple CRUD logic demonstration without UI overhead.*
+
+
+
+
+
+==============================================================================================================
+
+## 🔹 STEP 1: INSTALL REQUIRED SOFTWARE
+
+Make sure you have these:
+
+1️⃣ **Visual Studio 2022**
+
+* Workload: **.NET desktop development**
+
+2️⃣ **SQL Server**
+
+* SQL Server Express is enough
+
+3️⃣ **SQL Server Management Studio (SSMS)**
+
+---
+
+## 🔹 STEP 2: CREATE DATABASE & TABLE
+
+### 📌 Open **SQL Server Management Studio**
+
+1. Connect to server
+2. Right-click **Databases → New Database**
+3. Database name:
+
+```
+LoginDB
+```
+
+4. Click **OK**
+
+---
+
+### 📌 Create Table
+
+Select `LoginDB` → New Query → paste this:
+
+```sql
+CREATE TABLE Users
+(
+    UserId INT IDENTITY PRIMARY KEY,
+    Username VARCHAR(50) UNIQUE NOT NULL,
+    Password VARCHAR(50) NOT NULL
+);
+```
+
+👉 Execute (F5)
+
+✔ Table created successfully
+
+---
+
+## 🔹 STEP 3: CREATE CONSOLE APPLICATION
+
+### 📌 Open **Visual Studio**
+
+1. Click **Create a new project**
+2. Select **Console App**
+3. Language: **C#**
+4. Project Name:
+
+```
+DotNetLoginApp
+```
+
+5. Click **Create**
+
+---
+
+## 🔹 STEP 4: ADD REQUIRED NAMESPACES
+
+Open **Program.cs** and add:
+
+```csharp
+using System;
+using System.Data.SqlClient;
+using System.Collections.Generic;
+using System.Linq;
+```
+
+---
+
+## 🔹 STEP 5: SET DATABASE CONNECTION STRING
+
+Inside `Program` class:
+
+```csharp
+static string connectionString =
+    "Data Source=.;Initial Catalog=LoginDB;Integrated Security=True";
+```
+
+📌 `.` = local SQL Server
+📌 Change if your server name is different
+
+---
+
+## 🔹 STEP 6: CREATE USER CLASS
+
+At bottom of **Program.cs**:
+
+```csharp
+class User
+{
+    public string Username { get; set; }
+    public string Password { get; set; }
+}
+```
+
+---
+
+## 🔹 STEP 7: CREATE MAIN MENU
+
+Inside `Main()` method:
+
+```csharp
+while (true)
+{
+    Console.WriteLine("\n--- MENU ---");
+    Console.WriteLine("1. Login");
+    Console.WriteLine("2. Create User");
+    Console.WriteLine("3. Forgot Password");
+    Console.WriteLine("4. Exit");
+    Console.Write("Choose option: ");
+
+    int choice = int.Parse(Console.ReadLine());
+
+    switch (choice)
+    {
+        case 1: Login(); break;
+        case 2: CreateUser(); break;
+        case 3: ForgotPassword(); break;
+        case 4: return;
+        default: Console.WriteLine("Invalid choice"); break;
+    }
+}
+```
+
+---
+
+## 🔹 STEP 8: CREATE DATABASE FETCH METHOD (LINQ USED)
+
+```csharp
+static List<User> GetUsers()
+{
+    List<User> users = new List<User>();
+
+    using (SqlConnection con = new SqlConnection(connectionString))
+    {
+        SqlCommand cmd = new SqlCommand("SELECT * FROM Users", con);
+        con.Open();
+        SqlDataReader dr = cmd.ExecuteReader();
+
+        while (dr.Read())
+        {
+            users.Add(new User
+            {
+                Username = dr["Username"].ToString(),
+                Password = dr["Password"].ToString()
+            });
+        }
+    }
+    return users;
+}
+```
+
+✔ Database Connectivity
+✔ LINQ will be used on this list
+
+---
+
+## 🔹 STEP 9: LOGIN FUNCTION
+
+```csharp
+static void Login()
+{
+    Console.Write("Enter Username: ");
+    string username = Console.ReadLine();
+
+    Console.Write("Enter Password: ");
+    string password = Console.ReadLine();
+
+    var user = GetUsers()
+        .Where(u => u.Username == username && u.Password == password)
+        .FirstOrDefault();
+
+    if (user != null)
+        Console.WriteLine("✅ Login Successful");
+    else
+        Console.WriteLine("❌ Invalid username or password");
+}
+```
+
+✔ LINQ used
+✔ Validates credentials
+
+---
+
+## 🔹 STEP 10: CREATE USER FUNCTION
+
+```csharp
+static void CreateUser()
+{
+    Console.Write("Enter New Username: ");
+    string username = Console.ReadLine();
+
+    Console.Write("Enter Password: ");
+    string password = Console.ReadLine();
+
+    using (SqlConnection con = new SqlConnection(connectionString))
+    {
+        string query = "INSERT INTO Users VALUES (@u,@p)";
+        SqlCommand cmd = new SqlCommand(query, con);
+        cmd.Parameters.AddWithValue("@u", username);
+        cmd.Parameters.AddWithValue("@p", password);
+
+        con.Open();
+        cmd.ExecuteNonQuery();
+        Console.WriteLine("✅ User Created Successfully");
+    }
+}
+```
+
+✔ Inserts data into table
+
+---
+
+## 🔹 STEP 11: FORGOT PASSWORD FUNCTION
+
+```csharp
+static void ForgotPassword()
+{
+    Console.Write("Enter Username: ");
+    string username = Console.ReadLine();
+
+    var user = GetUsers()
+        .Where(u => u.Username == username)
+        .FirstOrDefault();
+
+    if (user != null)
+        Console.WriteLine("🔑 Your Password: " + user.Password);
+    else
+        Console.WriteLine("❌ User not found");
+}
+```
+
+---
+
+
+## 🔹 STEP 13: HOW TO EXPLAIN IN VIVA
+
+### ❓ Where is LINQ used?
+
+👉 `Where()` and `FirstOrDefault()`
+
+### ❓ How is database connected?
+
+👉 ADO.NET using `SqlConnection`
+
+### ❓ Why console app?
+
+👉 Simple logic demonstration
+
+### ❓ What table is used?
+
+👉 `Users` table
+
+
