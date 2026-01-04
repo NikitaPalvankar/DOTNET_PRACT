@@ -1,0 +1,17 @@
+﻿@model EmployeeMVC.Models.Employee
+
+<h2>Add Employee</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" />
+    </div>
+
+    <div>
+        <label>Address</label>
+        <input asp-for="Address" />
+    </div>
+
+    <button type="submit">Save</button>
+</form>
